@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Class Timetable</title>
+  <style>
+  body {
+    background-color: #15041d;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .header {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e7c4f6;
+    background-color: #502764;
+    box-shadow: 0 0 20px #e2a5fd;
+    border: 2px solid #000;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+  }
+  .header h1 {
+    text-align: center;
+    margin: 50px;
+    margin: 0;
+    font-size: 24px;
+  }
+  .header p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  .header b {
+    font-weight: bold;
+  }
+  table {
+    margin-top: 50px;
+    box-shadow: 0 0 20px #e2a5fd;
+    padding: 2px;
+    border: 2px solid black;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  th, td {
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  th {
+    font-size: 17px;
+    color: #e7c4f6;
+    background: #54216c;
+  }
+  td:first-child {
+    color: #e7c4f6;
+    background: #54216c; 
+    font-weight: bold;
+  }
+  td {
+    background-color: #dba0f7c4;
+  }
+  tr:nth-child(even) td:nth-child(odd):not(:first-child),
+  tr:nth-child(odd) td:nth-child(even):not(:first-child) {
+    background-color: #cda4de;
+    color: #000;
+  }
+  .empty {
+    background: #f8cfff !important;
+  }
+  tbody tr td:not(:first-child):hover {
+  background-color: #310d42 !important;
+  color: #e7c4f6 !important;
+  transform: scale(1.05);
+  transition: 0.3s;
+  z-index: 1;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+</style>  
+</head>
+<body>
+
+  <div class="header">
+    <h1>GLA University, Mathura</h1>
+    <p><b>Institute:</b> Institute of Engineering & Technology, Computer Engineering & Applications</p>
+    <p><b>Course:</b> Bachelor of Technology | <b>Section:</b> 2FC | <b>Semester:</b> III | <b>Class Teacher:</b> Dr. Swati Srivastava</p>
+    <p><b>Session:</b> 2025–2026 | <b>w.e.f:</b> 25 Aug 2025</p>
+  </div>
+
+  <table>
+    <tr>
+      <th>Day/Time</th>
+      <th>08:00-09:00</th>
+      <th>09:00-10:00</th>
+      <th>10:00-11:00</th>
+      <th>11:00-12:00</th>
+      <th>12:00-01:00</th>
+      <th>01:00-02:00</th>
+      <th>02:00-03:00</th>
+      <th>03:00-04:00</th>
+    </tr>
+
+    <tr>
+      <td >Monday</td>
+      <td class="empty"></td>
+      <td>BELH020<br>ABVIII-410</td>
+      <td>BCSC1010<br>ABVIII-410</td>
+      <td>BCSE0031<br>ABVIII-410</td>
+      <td class="empty"></td>
+      <td colspan="3">BCSC1002<br>ABVIII-410</td>
+    </tr>
+
+    <tr>
+      <td>Tuesday</td>
+      <td>BCSC1005<br>ABVIII-410</td>
+      <td>BELH020<br>ABVIII-410</td>
+      <td>BCSC1010<br>ABVIII-410</td>
+      <td>BCSC1003<br>ABVIII-410</td>
+      <td class="empty"></td>
+      <td colspan="3">BCSC0801<br>ABVIII-431</td>
+    </tr>
+
+    <tr>
+      <td>Wednesday</td>
+      <td colspan="2">2FC1/BCSC0804/ABI-5002<br>2FC1/BELH020 ABVIII-410</td>
+      <td>2FC2/BELH020<br>ABVIII-425</td>
+      <td>BCSC1010<br>ABVIII-410</td>
+      <td class="empty"></td>
+      <td colspan="3">PCPH0001<br>ABVIII-410</td>
+    </tr>
+
+    <tr>
+      <td>Thursday</td>
+      <td colspan="2">2FC1/BELH020<br>ABVIII-410</td>
+      <td colspan="2">2FC1/BCSC0802/ABI-322<br>2FC2/BCSC0802/ABI-323<br>2FC3/BCSC0802/ABI-329</td>
+      <td class="empty"></td>
+      <td>BCSC1005<br>ABVIII-410</td>
+      <td>BCSC1003<br>ABVIII-410</td>
+      <td>2FC2/BCSC1010<br>ABVIII-410</td>
+    </tr>
+
+    <tr>
+      <td>Friday</td>
+      <td>BCSE0813<br>ABVIII-410</td>
+      <td class="empty"></td>
+      <td>BCSC1003<br>ABVIII-410</td>
+      <td class="empty"></td>
+      <td class="empty"></td>
+      <td>2FC1/BCSC1010</td>
+      <td>2FC3/BCSC1010</td>
+      <td>BCSE0031<br>ABVIII-410</td>
+    </tr>
+  </table>
+</body>
+</html>
